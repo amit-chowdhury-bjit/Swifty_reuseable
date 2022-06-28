@@ -17,6 +17,7 @@
 		89B69BF8286AB3BA00C7E8F7 /* Swift_reusable_ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B69BF7286AB3BA00C7E8F7 /* Swift_reusable_ExampleTests.swift */; };
 		89B69C02286AB3BA00C7E8F7 /* Swift_reusable_ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B69C01286AB3BA00C7E8F7 /* Swift_reusable_ExampleUITests.swift */; };
 		89B69C04286AB3BA00C7E8F7 /* Swift_reusable_ExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B69C03286AB3BA00C7E8F7 /* Swift_reusable_ExampleUITestsLaunchTests.swift */; };
+		89B69C0F286ACAD600C7E8F7 /* SwiftyLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B69C0E286ACAD600C7E8F7 /* SwiftyLib.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		89B69BFD286AB3BA00C7E8F7 /* Swift_reusable ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift_reusable ExampleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B69C01286AB3BA00C7E8F7 /* Swift_reusable_ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_reusable_ExampleUITests.swift; sourceTree = "<group>"; };
 		89B69C03286AB3BA00C7E8F7 /* Swift_reusable_ExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift_reusable_ExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		89B69C0E286ACAD600C7E8F7 /* SwiftyLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyLib.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				89B69BD3286AB2C900C7E8F7 /* Swifty_reuseable.h */,
+				89B69C0E286ACAD600C7E8F7 /* SwiftyLib.swift */,
 			);
 			path = Swifty_reuseable;
 			sourceTree = "<group>";
@@ -244,6 +247,7 @@
 				TargetAttributes = {
 					89B69BCF286AB2C900C7E8F7 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 					};
 					89B69BDD286AB3B900C7E8F7 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -318,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89B69C0F286ACAD600C7E8F7 /* SwiftyLib.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -508,6 +513,7 @@
 		89B69BD8286AB2C900C7E8F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -528,6 +534,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -536,6 +543,7 @@
 		89B69BD9286AB2C900C7E8F7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
