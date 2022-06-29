@@ -56,7 +56,7 @@ Pod::Spec.new do |spec|
 
   spec.author             = { "amit-chowdhury-bjit" => "89369320+amit-chowdhury-bjit@users.noreply.github.com" }
   # Or just: spec.author    = "amit-chowdhury-bjit"
-  # spec.authors            = { "amit-chowdhury-bjit" => "89369320+amit-chowdhury-bjit@users.noreply.github.com" }
+   spec.authors            = { "amit-chowdhury-bjit" => "89369320+amit-chowdhury-bjit@users.noreply.github.com" }
   # spec.social_media_url   = "https://twitter.com/amit-chowdhury-bjit"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -69,19 +69,19 @@ Pod::Spec.new do |spec|
   # spec.platform     = :ios, "5.0"
 
   #  When using multiple platforms
-  # spec.ios.deployment_target = "5.0"
-  # spec.osx.deployment_target = "10.7"
+   spec.ios.deployment_target = "12.0"
+    #spec.osx.deployment_target = "10.7"
   # spec.watchos.deployment_target = "2.0"
   # spec.tvos.deployment_target = "9.0"
 
-
+    spec.swift_version = "5.5"
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the location from where the source should be retrieved.
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  spec.source       = { :git => "https://github.com/amit-chowdhury-bjit/Swifty_reuseable/tree/master", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/amit-chowdhury-bjit/Swifty_reuseable.git", :tag => "#{spec.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -92,7 +92,7 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/**/*.{h,m}"
+  spec.source_files  = "Swifty_reuseable/**/*.{h,m}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
